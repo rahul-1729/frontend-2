@@ -4,6 +4,9 @@ import user1 from '../assets/user1.jpg'
 import user2 from '../assets/user2.jpeg'
 import user3 from '../assets/user3.jpg'
 import user4 from '../assets/user4.jpg'
+import user5 from '../assets/user5.jpg'
+import user6 from '../assets/user6.jpg'
+import user7 from '../assets/user7.jpg'
 
 function Message() {
     const users=[
@@ -20,7 +23,7 @@ function Message() {
             active:true,
        },
        {
-        userName:"Emma",
+        userName:"Harmaine",
         userId:"@chudail",
         image:user2,
         active:false,
@@ -32,18 +35,39 @@ function Message() {
         active:false,
        },
        {
-            userName:"Bella",
+            userName:"Hella",
             userId:"@oadin_ki_Beti",
             image:user4,
             active:false,
-      }
+      },
+      {
+        userName:"Loki",
+        userId:"@lauki_chana",
+        image:user5,
+        active:false,
+       },
+       {
+        userName:"Thor",
+        userId:"@sautela_bhai",
+        image:user6,
+        active:false,
+       },
+       {
+            userName:"Hulk",
+            userId:"@hara_sand",
+            image:user7,
+            active:false,
+      },
+      
+      
+      
 
         
     ]
   return (
     <div className='w-full h-full grid grid-rows-12 px-4 py-2 '>
         {/* friend suggestion */}
-        <div className='row-span-1 flex items-center justify-between border-b border-gray-300'>
+        <div className='row-span-1 flex items-center justify-between '>
             <div className='w-1/2 h-full flex items-center font-bold text-xl text-gray-800'> <h2>Friend Suggestions</h2></div>
             
             <div className='w-1/2 h-full flex items-center gap-2 justify-end'>
@@ -57,36 +81,24 @@ function Message() {
 
             </div>
             
-        </div>
+        </div >
         {/* friend suggestion */}
-      {users.map((value)=>(
-          <div className='row-span-1 flex items-center border-b border-gray-300'>
 
-          <div className='h-full w-1/6 flex items-center relative' >
-              <img  className=' w-14 h-14 rounded-full border border-indigo-700' src= {value.image} alt={value.image} />
-              {value.active===true&&(
-                  <span class="bottom-1 left-10 absolute  w-3.5 h-3.5 bg-indigo-700 border border-white   rounded-full"></span>
-              )}
-             
-          </div>
-      
-      <div className='w-3/6 '>
-      
-        <h2 className='text-l text-gray-800'>{value.userName}</h2>
-        <h2 className='text-sm text-gray-600'>{value.userId}</h2>
-        
-        
-         
-     
-      </div>
-      <div className='flex justify-end w-2/6'> 
-        <svg class="w-5 h-5 text-gray-600 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.5v15m7.5-7.5h-15"/>
-                </svg>
-        </div>
-
-  </div>
+        {/* recommandation */}
+        <div className='row-span-5 relative overflow-auto py-2  rounded-xl border border-gray-200'>
+            <div className='relative overflow-y-auto h-80 px-2'>
+        {users.map((value)=>(
+           <div class="flex items-center gap-4 p-4 border-b border-gray-200">
+           <img class="w-12 h-12 rounded-full" src={value.image} alt={value.image}/>
+           <div class="flex flex-col">
+             <h2 class="text-slate-900  font-medium">{value.userName}</h2>
+             <span class="text-slate-500 text-sm font-medium dark:text-slate-400">{value.userId}</span>
+           </div>
+         </div>
       ))}
+       </div>
+        </div>
+     
       
       
      
@@ -112,12 +124,12 @@ function Message() {
         </div>
          {/* end of profile activity */}
          {/* analytics */}
-         <div className='row-span-5 bg-gray-200 border border-gray-400 rounded-3xl'>
+         <div className='row-span-5 bg-gray-100 border border-gray-400 rounded-3xl'>
             <div className=' w-full h-full gap-3 px-2 py-2'>
                 <div>
                 <div class="flex  h-2/5 -space-x-3 rtl:space-x-reverse">
                     {
-                        users.map((value)=>(<img class="w-12 h-12 border-2 border-gray-200 rounded-full dark:border-gray-200" src={value.image} alt={value.image}/>))
+                        users.map((value,index)=>index<=6&&(<img class="w-12 h-12 border-2 border-gray-200 rounded-full dark:border-gray-100" src={value.image} alt={value.image}/>))
                     }
    
     

@@ -50,9 +50,9 @@ path:"M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-
 
   return (
     <div className='grid grid-rows-10 gap-1 px-3'>
-      <div className='row-span-1 font-bold flex items-center gap-2'>
-        <div className='bg-white w-1/6 h-2/5 rounded-xl flex justify-center items-center'><h2 className='text-3xl text-indigo-700 sans-serif'>S</h2></div>
-        <h2 className='sans-serif text-3xl text-white'>slothui</h2>
+      <div className='row-span-1 font-bold flex items-center gap-4'>
+        <div className='bg-white w-1/6 h-2/5 rounded-xl flex justify-center items-center'><h2 className='text-3xl text-indigo-700 sans-serif'>C</h2></div>
+        <h2 className='sans-serif text-3xl text-white'>panCHAYti</h2>
       </div>
 
       <div className='row-span-9  grid grid-rows-12 gap-1'>
