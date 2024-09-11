@@ -58,11 +58,11 @@ path:"M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-
       <div className='row-span-9  grid grid-rows-12 gap-1'>
         {/* list */}
         <div className='row-span-1 flex justify-center items-center'>
-          <div className='w-full h-2/3 bg-indigo-500 border border-indigo-300 rounded-full flex items-center px-3 gap-2'>
+          <div className='w-full h-2/3 bg-indigo-500 border border-indigo-300 rounded-full flex items-center px-3 gap-3'>
               <svg class="w-5 h-5 text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
                 </svg>
-                <h2 className='text-white font-sans'>Search</h2>
+                <input className="w-4/5 h-full focus:outline-none text-sm bg-indigo-500 text-white placeholder-white" type="text" placeholder='Search'/>
           </div>
         </div>
 

@@ -1,6 +1,8 @@
  
 import './App.css';
 import Blue from './components/Blue'
+import Search from './components/Search'
+import Active from './components/Active'
 
 function App() {
   return (
@@ -11,17 +13,17 @@ function App() {
         
       </div>
       <div className="col-span-4 bg-gray-100 grid">
-        <div className="grid grid-rows-10 gap-1">
-          <div className="row-span-1 grid grid-cols-5 gap-1">
-            <div className="col-span-3 bg-white grid">
-              {/* search section */}
+        <div className="grid grid-rows-10 gap-0.5">
+          <div className="row-span-1 grid grid-cols-6 gap-0.5">
+            <div className="col-span-4 bg-white grid">
+              <Search/>
             </div>
             <div className="col-span-2  bg-white grid ">
-              {/* active section  */}
+               <Active/>
             </div>
           </div>
-          <div className="row-span-9 grid grid-cols-5 gap-1">
-            <div className="col-span-3  bg-white grid ">
+          <div className="row-span-9 grid grid-cols-6 gap-0.5">
+            <div className="col-span-4 bg-white grid ">
               {/* scroll section */}
             </div>
             <div className="col-span-2  bg-white grid">
