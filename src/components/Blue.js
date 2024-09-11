@@ -70,7 +70,7 @@ path:"M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-
         {sidebarMenu.map((value)=>
 
 (<>
-    <div className='row-span-1 rounded-xl flex items-center px-3 text-white gap-1'>
+    <div className='row-span-1 rounded-xl flex items-center px-3 text-white gap-1 hover:bg-indigo-300 hover:bg-opacity-10'>
      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="size-6">
 <path stroke-linecap="round" stroke-linejoin="round" d={value.path} />
 </svg>
@@ -82,7 +82,7 @@ path:"M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-
       {/* list ended */}
         <div className='row-span-3 '></div>
         <div className='row-span-1 flex justify-center items-center'>
-          <div className='w-full h-2/3 bg-indigo-500 border border-indigo-300 rounded-full flex items-center justify-between px-3 gap-2 text-white'>
+          <div className='w-full h-2/3 bg-indigo-500 border border-indigo-300 rounded-full flex items-center justify-between px-3 gap-2 text-white '>
                
                 <h2 className='text-white font-sans'>Go Pro</h2>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6">

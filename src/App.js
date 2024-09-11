@@ -3,6 +3,7 @@ import './App.css';
 import Blue from './components/Blue'
 import Search from './components/Search'
 import Active from './components/Active'
+import Message from './components/Message';
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
               {/* scroll section */}
             </div>
             <div className="col-span-2  bg-white grid">
-              {/* message section */}
+               <Message/>
             </div>
           </div>
         </div>
