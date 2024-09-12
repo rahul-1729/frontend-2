@@ -112,10 +112,10 @@ function Post() {
 
         <div className='w-full h-4/5 p-2'>
        
-            <div className=' rounded-3xl border border-gray-300  grid grid-rows-6 shadow-xl'>
+            <div className=' h-full w-full rounded-3xl border border-gray-300  grid grid-rows-6 shadow-xl'>
                 
                 {/* section 1 */}
-                  <div className=' flex row-span-1 border-b border-gray-300 gap-2 items-center  px-2 '>
+                  <div className=' flex row-span-1 border-b border-gray-300 gap-2 items-center  px-2  h-full w-full'>
                         <div className='flex h-full w-20 items-center px-2'>
                            <img className="h-14 w-14 rounded-full items-center"src={user0} alt={user0} />
                         </div>
@@ -134,7 +134,7 @@ function Post() {
                         </div>
                   </div>
                   {/* section-2 */}
-                  <div className='row-span-4 border-b border-gray-300 grid grid-rows-8 gap-1 p-1'>
+                  <div className='row-span-4 border-b border-gray-300 grid grid-rows-8 gap-1 p-1 h-full w-full'>
                         {/* gyan */}
                          <div className='row-span-2 px-2 text-gray-600'>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid nesciunt ullam sunt labore adipisci nam, quos enim quam quis unde.</p>
@@ -177,7 +177,7 @@ function Post() {
                          </div>
                   </div>
                   {/* section-3 */}
-                  <div className='row-span-1  flex justify-between items-center p-2'>
+                  <div className='row-span-1  flex justify-between items-center p-2 h-full w-full'>
                      <div className='flex items-center gap-2 h-full w-4/5 '>
                         <div className='h-full w-20'>
                             <div className='flex h-full w-20 items-center px-2'>
@@ -216,32 +216,12 @@ function Post() {
 
 
             {/* start */}
-              
             <div className='w-full h-4/5 p-2'>
-                <div className=' rounded-3xl border border-gray-300  grid grid-rows-6 shadow-xl h-full w-full '>
-                <div className=' flex row-span-1 border-b border-gray-300 gap-2 items-center  h-full w-full px-2  '>
-                        <div className='flex h-full w-20 items-center px-2 '>
-                           {/* <img className="h-14 w-14 rounded-full items-center"src={user0} alt={user0} /> */}
-                        </div>
-                        <div className='flex justify-between w-full  h-full items-center '>
-                            <div className='flex flex-col h-full'>
-                              {/* <h2 className='font-bold text-gray-600'>Name</h2>
-                              <h2 className='font-thin text-sm'>job</h2> */}
-                            </div>
-                                <div className='px-2 text-gray-500'>
-                                {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 12.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 18.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5Z" />
-                              </svg> */}
-                                </div>
-                                
-
-                        </div>
-                  </div>
-                </div>
+            <div className=' h-full w-full rounded-3xl border border-gray-300  grid grid-rows-6 shadow-xl'>
+                
             </div>
 
-            
-           
+            </div>
                 
             {/* end */}
         

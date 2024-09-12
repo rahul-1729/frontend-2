@@ -10,6 +10,7 @@ import user6 from '../assets/user6.jpg'
 import user7 from '../assets/user7.jpg'
 
  
+ 
 
 function Story() {
 
@@ -70,6 +71,8 @@ function Story() {
     ]
   return (
     <div className=' relative flex  h-full items-center w-full px-4 gap-4 '>
+        
+      
       
         <div className='flex items-center   w-[90px] h-[90px]'>
             <div className='  w-[85px] h-[85px]  block flex items-center justify-center rounded-full from-instagramYellow via-instagramOrange to-instagramPurple relative rounded-full bg-gradient-to-tr'>
