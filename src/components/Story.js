@@ -9,6 +9,8 @@ import user5 from '../assets/user5.jpg'
 import user6 from '../assets/user6.jpg'
 import user7 from '../assets/user7.jpg'
 
+ 
+
 function Story() {
 
     const users=[
@@ -68,9 +70,10 @@ function Story() {
     ]
   return (
     <div className=' relative flex  h-full items-center w-full px-4 gap-4 '>
+      
         <div className='flex items-center   w-[90px] h-[90px]'>
-            <div className='  w-[90px] h-[90px]  block flex items-center justify-center rounded-full from-instagramYellow via-instagramOrange to-instagramPurple relative rounded-full bg-gradient-to-tr'>
-                <img className="w-20 h-20 rounded-full border-4 border-white "src={user0} alt={user0} />
+            <div className='  w-[85px] h-[85px]  block flex items-center justify-center rounded-full from-instagramYellow via-instagramOrange to-instagramPurple relative rounded-full bg-gradient-to-tr'>
+                <img className="w-20 h-20 rounded-full border-2 border-white "src={user0} alt={user0} />
                 <span className='w-7 h-7 border border-white bottom-1 right-0 absolute rounded-full bg-indigo-500 flex py-0.5 px-0.5'>
                 <svg class="w-5 h-5 text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M12 4.5v15m7.5-7.5h-15"/>
@@ -80,17 +83,23 @@ function Story() {
              
         
         </div>
+        
 
         {
             users.map((value)=>(
+                
+                
+
                 <div className='flex items-center  w-[90px] h-[90px]'>
-            <div className=' w-[90px] h-[90px]  block flex items-center justify-center rounded-full from-instagramYellow via-instagramOrange to-instagramPurple relative rounded-full bg-gradient-to-tr '>
-                <img className="w-20 h-20 rounded-full border-4 border-white"src={value.image} alt={value.image} />
+            <div className=' w-[85px] h-[85px]  block flex items-center justify-center rounded-full from-instagramYellow via-instagramOrange to-instagramPurple relative rounded-full bg-gradient-to-tr '>
+                <img className="w-20 h-20 rounded-full border-2 border-white"src={value.image} alt={value.image} />
                 
             </div>
              
+             
             
         </div>
+         
             ))
          }   
         
