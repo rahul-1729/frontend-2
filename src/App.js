@@ -24,8 +24,8 @@ function App() {
                <Active/>
             </div>
           </div>
-          <div className="row-span-9 grid grid-cols-6 gap-0.5">
-            <div className="col-span-4 bg-white grid ">
+          <div className="row-span-9 grid grid-cols-6 gap-0.5 w-full h-full ">
+            <div className="col-span-4 bg-white grid">
               <Hero/>
             </div>
             <div className="col-span-2  bg-white grid">

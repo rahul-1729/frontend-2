@@ -42,7 +42,7 @@ function Message() {
       },
       {
         userName:"Loki",
-        userId:"@lauki_chana",
+        userId:"@great_purpose",
         image:user5,
         active:false,
        },

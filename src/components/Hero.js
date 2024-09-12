@@ -4,7 +4,7 @@ import Story from '../components/Story'
 function Hero() {
   return (
     <div className='w-full h-full grid grid-rows-6 gap-2 p-2'>
-         <div className='row-span-1 bg-gray-100 rounded-3xl' >
+         <div className='row-span-1 bg-gray-100 rounded-3xl w-full h-full realtive overflow-x-auto' >
           <Story/>
          </div>
          <div></div>
